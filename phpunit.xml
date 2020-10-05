@@ -16,12 +16,12 @@
 
     <filter>
         <whitelist>
-            <directory>./src/Kris</directory>
+            <directory>./src/Vitoutry</directory>
             <exclude>
-                <file>./src/Kris/LaravelFormBuilder/FormBuilderServiceProvider.php</file>
-                <file>./src/Kris/LaravelFormBuilder/Facades/FormBuilder.php</file>
-                <file>./src/Kris/LaravelFormBuilder/Console/FormMakeCommand.php</file>
-                <file>./src/Kris/LaravelFormBuilder/FormBuilderTrait.php</file>
+                <file>./src/Vitoutry/LaravelFormBuilder/FormBuilderServiceProvider.php</file>
+                <file>./src/Vitoutry/LaravelFormBuilder/Facades/FormBuilder.php</file>
+                <file>./src/Vitoutry/LaravelFormBuilder/Console/FormMakeCommand.php</file>
+                <file>./src/Vitoutry/LaravelFormBuilder/FormBuilderTrait.php</file>
             </exclude>
         </whitelist>
     </filter>

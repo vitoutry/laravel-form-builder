@@ -24,10 +24,10 @@
         },
         "laravel": {
             "providers": [
-                "vitoutry\\LaravelFormBuilder\\FormBuilderServiceProvider"
+                "Vitoutry\\LaravelFormBuilder\\FormBuilderServiceProvider"
             ],
             "aliases": {
-                "FormBuilder": "vitoutry\\LaravelFormBuilder\\Facades\\FormBuilder"
+                "FormBuilder": "Vitoutry\\LaravelFormBuilder\\Facades\\FormBuilder"
             }
         }
     },
