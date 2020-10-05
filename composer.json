@@ -1,24 +1,16 @@
 {
-    "name": "kris/laravel-form-builder",
-    "description": "Laravel form builder - symfony like",
+    "name": "vitoutry/laravel-form-builder",
+    "description": "Laravel form builder  (make a support laravel 8, kris)",
     "keywords": ["laravel", "form", "builder","symfony"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Kristijan Husak",
-            "email": "husakkristijan@gmail.com"
-        },
-        {
-            "name": "Mike Erickson",
-            "email": "codedungeon@gmail.com"
-        },
-        {
-            "name": "Mike Erickson",
-            "email": "mike.erickson@codedungeon.io"
+            "name": "Vitou Try",
+            "email": "vitoutry@gmail.com"
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.2",
         "laravelcollective/html": "^5.6|^6|^7|^8",
         "illuminate/database": "^5.6@dev|^6|^7|^8",
         "illuminate/validation": "^5.6@dev|^6|^7|^8"
@@ -32,16 +24,16 @@
         },
         "laravel": {
             "providers": [
-                "Kris\\LaravelFormBuilder\\FormBuilderServiceProvider"
+                "vitoutry\\LaravelFormBuilder\\FormBuilderServiceProvider"
             ],
             "aliases": {
-                "FormBuilder": "Kris\\LaravelFormBuilder\\Facades\\FormBuilder"
+                "FormBuilder": "vitoutry\\LaravelFormBuilder\\Facades\\FormBuilder"
             }
         }
     },
     "autoload": {
         "psr-0": {
-            "Kris\\LaravelFormBuilder": "src/"
+            "vitoutry\\LaravelFormBuilder": "src/"
         },
         "classmap": [
             "tests/FormBuilderTestCase.php"

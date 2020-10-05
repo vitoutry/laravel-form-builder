@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\FormField;
-use Kris\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Fields\FormField;
+use Vitoutry\LaravelFormBuilder\Form;
 
 if(!function_exists('getFormBuilderViewPath'))
 {
