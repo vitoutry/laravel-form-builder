@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-0": {
-            "vitoutry\\LaravelFormBuilder": "src/"
+            "Vitoutry\\LaravelFormBuilder": "src/"
         },
         "classmap": [
             "tests/FormBuilderTestCase.php"

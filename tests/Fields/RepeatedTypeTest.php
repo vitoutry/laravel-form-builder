@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\RepeatedType;
-use Kris\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Fields\RepeatedType;
+use Vitoutry\LaravelFormBuilder\Form;
 
 class RepeatedTypeTest extends FormBuilderTestCase
 {
@@ -16,8 +16,8 @@ class RepeatedTypeTest extends FormBuilderTestCase
 
         $this->assertEquals(2, count($repeated->getChildren()));
 
-        $this->assertInstanceOf('Kris\LaravelFormBuilder\Fields\InputType', $repeated->first);
-        $this->assertInstanceOf('Kris\LaravelFormBuilder\Fields\InputType', $repeated->second);
+        $this->assertInstanceOf('Vitoutry\LaravelFormBuilder\Fields\InputType', $repeated->first);
+        $this->assertInstanceOf('Vitoutry\LaravelFormBuilder\Fields\InputType', $repeated->second);
         $this->assertNull($repeated->third);
     }
 

@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\Traits\ValidatesWhenResolved;
+use Vitoutry\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Traits\ValidatesWhenResolved;
 
 class TestForm extends Form
 {

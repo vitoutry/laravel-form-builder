@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Http\Exceptions\HttpResponseException;
-use Kris\LaravelFormBuilder\Events\AfterFormValidation;
-use Kris\LaravelFormBuilder\Events\BeforeFormValidation;
-use Kris\LaravelFormBuilder\Fields\InputType;
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\FormHelper;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Vitoutry\LaravelFormBuilder\Events\AfterFormValidation;
+use Vitoutry\LaravelFormBuilder\Events\BeforeFormValidation;
+use Vitoutry\LaravelFormBuilder\Fields\InputType;
+use Vitoutry\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\FormHelper;
+use Vitoutry\LaravelFormBuilder\FormBuilder;
 
 class FormTest extends FormBuilderTestCase
 {
@@ -29,22 +29,22 @@ class FormTest extends FormBuilderTestCase
         $this->assertEquals($this->plainForm->name, $this->plainForm->getField('name'));
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\InputType',
+            'Vitoutry\LaravelFormBuilder\Fields\InputType',
             $this->plainForm->getField('name')
         );
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\TextareaType',
+            'Vitoutry\LaravelFormBuilder\Fields\TextareaType',
             $this->plainForm->getField('description')
         );
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\CheckableType',
+            'Vitoutry\LaravelFormBuilder\Fields\CheckableType',
             $this->plainForm->getField('remember')
         );
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\StaticType',
+            'Vitoutry\LaravelFormBuilder\Fields\StaticType',
             $this->plainForm->getField('address')
         );
     }
@@ -395,7 +395,7 @@ class FormTest extends FormBuilderTestCase
         $this->assertEquals(1, $addressIndex);
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\InputType',
+            'Vitoutry\LaravelFormBuilder\Fields\InputType',
             $this->plainForm->address
         );
     }
@@ -431,7 +431,7 @@ class FormTest extends FormBuilderTestCase
         $this->assertEquals(0, $addressIndex);
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\InputType',
+            'Vitoutry\LaravelFormBuilder\Fields\InputType',
             $this->plainForm->address
         );
     }
@@ -762,7 +762,7 @@ class FormTest extends FormBuilderTestCase
         $this->assertEquals('test body', $form->song->body->getOption('value'));
         $this->assertEquals('main title', $form->title->getOption('value'));
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Form',
+            'Vitoutry\LaravelFormBuilder\Form',
             $form->song->getForm()
         );
 
@@ -1071,8 +1071,8 @@ class FormTest extends FormBuilderTestCase
 
         $this->assertEquals(
             [
-                'Kris\LaravelFormBuilder\Events\BeforeFormValidation',
-                'Kris\LaravelFormBuilder\Events\AfterFormValidation',
+                'Vitoutry\LaravelFormBuilder\Events\BeforeFormValidation',
+                'Vitoutry\LaravelFormBuilder\Events\AfterFormValidation',
             ],
             $events
         );
@@ -1148,11 +1148,11 @@ class FormTest extends FormBuilderTestCase
 
         $expected = [
             'test_field' => [
-                'Trim'    => new \Kris\LaravelFormBuilder\Filters\Collection\Trim(),
-                'Uppercase' => new \Kris\LaravelFormBuilder\Filters\Collection\Uppercase()
+                'Trim'    => new \Vitoutry\LaravelFormBuilder\Filters\Collection\Trim(),
+                'Uppercase' => new \Vitoutry\LaravelFormBuilder\Filters\Collection\Uppercase()
             ],
             'test_field2' => [
-                'Uppercase' => new \Kris\LaravelFormBuilder\Filters\Collection\Uppercase()
+                'Uppercase' => new \Vitoutry\LaravelFormBuilder\Filters\Collection\Uppercase()
             ]
         ];
 

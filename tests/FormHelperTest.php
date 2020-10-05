@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\FormHelper;
+use Vitoutry\LaravelFormBuilder\FormHelper;
 use Illuminate\Support\Collection;
 
 class FormHelperTest extends FormBuilderTestCase
@@ -54,19 +54,19 @@ class FormHelperTest extends FormBuilderTestCase
         $static = $this->formHelper->getFieldType('static');
         $entity = $this->formHelper->getFieldType('entity');
 
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\InputType', $input);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\SelectType', $select);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\TextareaType', $textarea);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ButtonType', $submit);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ButtonType', $reset);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ButtonType', $button);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\CheckableType', $radio);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\CheckableType', $checkbox);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ChoiceType', $choice);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\RepeatedType', $repeated);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\CollectionType', $collection);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\StaticType', $static);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\EntityType', $entity);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\InputType', $input);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\SelectType', $select);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\TextareaType', $textarea);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\ButtonType', $submit);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\ButtonType', $reset);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\ButtonType', $button);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\CheckableType', $radio);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\CheckableType', $checkbox);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\ChoiceType', $choice);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\RepeatedType', $repeated);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\CollectionType', $collection);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\StaticType', $static);
+        $this->assertEquals('Vitoutry\\LaravelFormBuilder\\Fields\\EntityType', $entity);
     }
 
     /**

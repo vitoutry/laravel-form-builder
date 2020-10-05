@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\EntityType;
-use Kris\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Fields\EntityType;
+use Vitoutry\LaravelFormBuilder\Form;
 
 class EntityTypeTest extends FormBuilderTestCase
 {

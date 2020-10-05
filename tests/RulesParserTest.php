@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\InputType;
+use Vitoutry\LaravelFormBuilder\Fields\InputType;
 
 class RulesParserTest extends FormBuilderTestCase
 {

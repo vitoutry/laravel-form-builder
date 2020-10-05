@@ -1,9 +1,9 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ChoiceType;
-use Kris\LaravelFormBuilder\Fields\CollectionType;
-use Kris\LaravelFormBuilder\Fields\SelectType;
-use Kris\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Fields\ChoiceType;
+use Vitoutry\LaravelFormBuilder\Fields\CollectionType;
+use Vitoutry\LaravelFormBuilder\Fields\SelectType;
+use Vitoutry\LaravelFormBuilder\Form;
 
 class ChildFormTypeTest extends FormBuilderTestCase
 {

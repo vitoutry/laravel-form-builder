@@ -2,10 +2,10 @@
 
 namespace {
 
-    use Kris\LaravelFormBuilder\Fields\ChoiceType;
-    use Kris\LaravelFormBuilder\Fields\CollectionType;
-    use Kris\LaravelFormBuilder\Fields\SelectType;
-    use Kris\LaravelFormBuilder\Form;
+    use Vitoutry\LaravelFormBuilder\Fields\ChoiceType;
+    use Vitoutry\LaravelFormBuilder\Fields\CollectionType;
+    use Vitoutry\LaravelFormBuilder\Fields\SelectType;
+    use Vitoutry\LaravelFormBuilder\Form;
     use Illuminate\Foundation\Testing\Concerns\InteractsWithSession;
     use Illuminate\Database\Eloquent\Model;
 
@@ -28,7 +28,7 @@ namespace {
             $emailsCollection = new CollectionType('emails', 'collection', $this->plainForm, $options);
 
             $this->assertEquals(3, count($emailsCollection->getChildren()));
-            $this->assertInstanceOf('Kris\LaravelFormBuilder\Fields\SelectType', $emailsCollection->prototype());
+            $this->assertInstanceOf('Vitoutry\LaravelFormBuilder\Fields\SelectType', $emailsCollection->prototype());
         }
 
         /** @test */
@@ -75,7 +75,7 @@ namespace {
             $emailsCollection = new CollectionType('emails', 'collection', $this->plainForm, $options);
 
             $this->assertEquals(2, count($emailsCollection->getChildren()));
-            $this->assertInstanceOf('Kris\LaravelFormBuilder\Fields\SelectType', $emailsCollection->prototype());
+            $this->assertInstanceOf('Vitoutry\LaravelFormBuilder\Fields\SelectType', $emailsCollection->prototype());
         }
 
         /** @test */
@@ -241,7 +241,7 @@ namespace {
 
 namespace LaravelFormBuilderCollectionTypeTest\Forms {
 
-    use Kris\LaravelFormBuilder\Form;
+    use Vitoutry\LaravelFormBuilder\Form;
 
     class NamespacedDummyForm extends Form
     {

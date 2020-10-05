@@ -1,8 +1,8 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ButtonType;
-use Kris\LaravelFormBuilder\Fields\InputType;
-use Kris\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Fields\ButtonType;
+use Vitoutry\LaravelFormBuilder\Fields\InputType;
+use Vitoutry\LaravelFormBuilder\Form;
 
 class InputTypeTest extends FormBuilderTestCase
 {

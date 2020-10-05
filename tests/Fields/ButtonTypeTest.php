@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ButtonType;
-use Kris\LaravelFormBuilder\Form;
+use Vitoutry\LaravelFormBuilder\Fields\ButtonType;
+use Vitoutry\LaravelFormBuilder\Form;
 
 class ButtonTypeTest extends FormBuilderTestCase
 {
